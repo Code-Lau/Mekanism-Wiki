@@ -30,9 +30,28 @@
       </section>
     </main>
     <footer>
-      <ul>
-        <li>link 1</li>
-        <li>link 2</li>
+      <div>
+        <a href="mailto:laurenleighwoods@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-envelope"></i>
+          info@mekanism.com
+        </a>
+      </div>
+      <ul class="social-icons">
+        <li>
+          <a href="https://x.com/aidancbrady" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/aidancbrady" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/aidancbrady/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
       </ul>
     </footer>
   </div>
@@ -71,7 +90,8 @@ header {
   display: flex;
   justify-content: space-between;
   gap:15px;
-  padding: 10px 10px;
+  margin-top:15px;
+  padding: 10px;
   background-color: #162844;
   position: relative;
   font-weight: 700;
@@ -102,7 +122,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 100px;
-  margin-top:70px;
+  margin-top:40px;
 }
 
 .hero-text p {
@@ -138,5 +158,13 @@ footer ul {
 
 footer ul li {
   margin: 8px;
+}
+
+.social-icons, footer div a {
+  font-size: 30px;
+}
+
+.social-icons, footer div a, .logo, .nav-menu {
+  padding: 15px;
 }
 </style>
