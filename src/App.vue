@@ -1,13 +1,17 @@
 <script setup>
-  import HomePage from '@/components/HomePage.vue'
+import HomePage from './components/HomePage.vue';
 </script>
 
 <template>
-  <div id="app">
+  <div class="page-wrapper">
     <HomePage />
   </div>
 </template>
 
 <style scoped>
-
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 </style>
