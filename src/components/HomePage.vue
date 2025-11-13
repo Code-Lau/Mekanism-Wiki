@@ -3,12 +3,7 @@
 </script>
 
 <template>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-  </head>
-  <body>
+  <div class="home-wrapper">
     <header>
       <a href="index.html" class="logo">MEKANISM</a>
       <div class="nav-menu">
@@ -19,7 +14,7 @@
       </div>
     </header>
     <main>
-      <section>
+      <section class="hero-section">
         <figure>
           <img src="@/assets/images/variousmachines.webp" alt="A picture of various Mekanism machines">
         </figure>
@@ -35,30 +30,28 @@
       </section>
     </main>
     <footer>
+      <ul>
+        <li>link 1</li>
+        <li>link 2</li>
+      </ul>
     </footer>
-  </body>
+  </div>
+
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Saira Condensed', 'Tahoma', 'Verdana', sans-serif;
-  list-style: none;
-  text-decoration: none;
-  color:#fff;
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
-html {
-  scroll-behavior: smooth;
+main {
+  flex: 1;
 }
 
 /* Header */
 header {
-  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -68,11 +61,10 @@ header {
 }
 
 .logo {
-  font-size: 4em;
+  font-size: 64px;
   font-weight: 700;
   color: white;
   cursor: pointer;
-  padding-right: 20px;
 }
 
 .nav-menu {
@@ -89,13 +81,6 @@ header {
 }
 
 /* Body */
-img {
-  width:40%;
-  border-radius: 2em;
-  object-fit:contain;
-  padding:1em;
-}
-
 h1 {
   color: #162844;
 }
@@ -105,29 +90,53 @@ h2 {
   margin:1em;
 }
 
+img {
+  width:100%;
+  border-radius: 2em;
+  object-fit:contain;
+  padding:8px;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  margin-top:70px;
+}
+
 .hero-text p {
   color: #162844;
   font-size: 20px;
-  padding: 0.5em 1em;
+  padding: 20px;
 }
 
 .hero-text {
+  padding: 12px;
   color: #162844;
   text-align: center;
   line-height: 110%;
   font-weight: 300;
   word-spacing: 5px;
-  margin:1em;
+  margin: 0 8px;
 }
 
-/* Footer */
 footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 1.5em;
+  padding: 16px;
   background: #162844;
   font-size: 17px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+}
+
+footer ul li {
+  margin: 8px;
 }
 </style>
