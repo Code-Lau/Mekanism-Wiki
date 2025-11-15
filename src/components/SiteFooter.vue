@@ -31,5 +31,30 @@
 </template>
 
 <style scoped>
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+  background: #162844;
+  font-size: 17px;
+}
 
+footer ul {
+  display: flex;
+  flex-direction: row;
+}
+
+footer ul li {
+  margin: 8px;
+}
+
+.social-icons, footer div a {
+  font-size: 30px;
+}
+
+.social-icons, footer div a, .logo, .nav-menu {
+  padding: 15px;
+}
 </style>
