@@ -13,5 +13,7 @@ import { navLinks } from '../navigation.js'
 </script>
 
 <style scoped>
-
+  nav.desktop-nav {
+    display: none;
+  }
 </style>
