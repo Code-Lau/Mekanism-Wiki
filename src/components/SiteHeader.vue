@@ -4,15 +4,17 @@
 
 <template>
   <header>
-    <a href="../../../index.html" class="logo">MEKANISM</a>
+    <router-link to="/" class="logo">MEKANISM</router-link>
+
     <div class="nav-menu">
-      <a href="">HOME</a>
-      <a href="">ABOUT</a>
-      <a href="">GUIDE</a>
-      <a href="">DOWNLOAD</a>
+      <router-link to="/">HOME</router-link>
+      <router-link to="/about">ABOUT</router-link>
+      <router-link to="/about">GUIDE</router-link>
+      <router-link to="/about">DOWNLOAD</router-link>
     </div>
   </header>
 </template>
+
 
 <style scoped>
 header {
