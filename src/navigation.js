@@ -1,8 +1,9 @@
 export const navLinks = [
-    { name: 'Home', path: '/' },
+    { name: 'Home', path: '/home' },
     { name: 'About', path: '/about' },
-    { name: 'GettingStarted', path: '/gettingstarted' },
-    { name: 'Downloads', path: 'downloads' },
-    { name: 'ItemList', path: 'itemlist'},
-    { name: 'OsmiumOre', path: 'osmiumore'}
+    { name: 'Guide', path: '/guide' },
+    { name: 'ItemList', path: '/item-list'},
+    { name: 'Downloads', path: '/downloads' },
+    { name: 'OsmiumOre', path: '/osmium-ore'},
+    { name: 'GettingStarted', path: '/getting-started' }
 ]

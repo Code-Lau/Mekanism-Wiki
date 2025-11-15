@@ -1,18 +1,12 @@
 <template>
   <div>
-    <SiteHeader />
     <NavigationBar />
+    <SiteHeader />
     <MobileNav />
     <main>
-      <aside id="sidebarA">
-        <SidebarResources />
-      </aside>
       <section>
-          <router-view />
+        <router-view />
       </section>
-      <aside id="sidebarB">
-        <SidebarPreparation />
-      </aside>
     </main>
     <SiteFooter />
   </div>
