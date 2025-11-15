@@ -8,9 +8,7 @@
         <SidebarResources />
       </aside>
       <section>
-        <Transition name="fade" mode="out-in">
           <router-view />
-        </Transition>
       </section>
       <aside id="sidebarB">
         <SidebarPreparation />
@@ -23,6 +21,8 @@
 <script setup>
 import SiteHeader from './components/SiteHeader.vue'
 import SiteFooter from './components/SiteFooter.vue'
+import NavigationBar from "./components/NavigationBar.vue";
+import MobileNav from "./components/MobileNav.vue";
 </script>
 
 <style scoped>
