@@ -4,17 +4,16 @@
 
 <template>
   <header>
-    <router-link to="/" class="logo">MEKANISM</router-link>
-
+    <router-link to="/home" class="logo">MEKANISM</router-link>
     <div class="nav-menu">
-      <router-link to="/">HOME</router-link>
+      <router-link to="/home">HOME</router-link>
       <router-link to="/about">ABOUT</router-link>
-      <router-link to="/about">GUIDE</router-link>
-      <router-link to="/about">DOWNLOAD</router-link>
+      <router-link to="/guide">GUIDE</router-link>
+      <router-link to="/item-list">ITEMS</router-link>
+      <router-link to="/downloads">DOWNLOAD</router-link>
     </div>
   </header>
 </template>
-
 
 <style scoped>
 header {
@@ -43,6 +42,6 @@ header {
   position: relative;
   font-weight: 700;
   color:white;
-  font-size: 48px;
+  font-size: 40px;
 }
 </style>
