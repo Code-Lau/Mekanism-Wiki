@@ -13,3 +13,13 @@ body>footer {
     position: sticky;
     top: 100vh;
 }
+
+.home-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+main {
+    flex: 1;
+}
